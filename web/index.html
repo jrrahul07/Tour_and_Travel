@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Tour Planner</title>
+</head>
+<style>
+    
+    body{
+        font-family: 'Fredoka One', cursive;
+        color: rgb(3, 40, 73);
+        margin: -15px;
+        padding: 0px;
+        background: url('./front_img1.jpg');
+    }
+    .left{
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 35px;
+        top: 16px;
+    }
+    .left div{
+        line-height: 19px;
+        font-size: 18px;
+        text-align: center;
+    }
+    .mid{
+        display: block;
+        width: 95%;
+        margin: 30px auto;
+        /* border: 2px solid green; */
+    }
+    .right{
+        position: absolute;
+        right: 29px;
+        top: 26px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 15px;
+    }
+    .navbar li a{
+        color: rgb(54, 6, 116);
+        text-decoration: none;
+        padding: 35px 17px;
+    }
+    .navbar li a:hover , .navbar li a.active{
+        text-decoration: underline;
+        color: gray;
+    }
+    .btn{
+        font-family: 'Fredoka One', cursive;
+        margin: 0px 8px;
+        background-color: black;
+        color: white; 
+        padding: 3px 10px;
+        border: 2px solid grey;
+        border-radius: 8px;
+        font-size: 12px;
+        cursor: pointer;
+    }
+    .btn li{
+        display: flex;
+        float: right;
+    }
+    .btn:hover{
+        background-color: grey;
+    }
+    #home h1{
+    color: rgb(60, 12, 122);
+    text-align: center;
+    margin-top: 16%;
+    font-size: 2.9rem;
+    font-family: 'Fredoka One', cursive;
+}
+</style>
+<body>
+    <header class="header">
+        
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Flights</a></li>
+                <li><a href="#">Tour Packages</a></li>
+                <li><a href="#">Hotels</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+
+        <div class="btn">
+            <button>
+                <a href="Login.html">
+                <li>SignIn</li>
+            </a>
+            </button>
+        </div>
+        </div>
+
+    </header>
+    <section id="home">
+        <h1 class="h-primary">Welcome to Online Tourism</h1>
+    </section>
+</body>
+</html>

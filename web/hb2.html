@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking Form</title>
+    <link rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <style>
+        :root {
+            --dark-color: #262727;
+            --color-100: #F0F0F0;
+            --color-200: #EEEEEE;
+            --color-300: #E0E0E0;
+            --color-400: #BDBDBD;
+            --color-500: #525252;
+            --color-600: #464545;
+            --color-700: #363535;
+            --color-800: #252525;
+            --color-900: #181818;
+            --color-000: #000000;
+            --border-color: #e9e6e1;
+            --card-color: #f5f5f5;
+            --body-color: #f8f6f2;
+            --white-color: #ffffff;
+            --sidebar-color: #ffffff;
+
+            --primary-color: #2794eb;
+            --secondary-color: #00AC9A;
+        }
+
+        .form-control,
+        .form-select {
+            border-color: var(--border-color);
+            color: var(--color-900);
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            font-size: 15px;
+        }
+
+        .btn.btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+
+        .card {
+            background-color: var(--card-color);
+            border: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <form method="post" action="hotelBookingBackend">
+            <div class="card p-4 mt-5">
+                <div class="row g-3">
+                    <div class="col-12 mb-4">
+                        <h4>Hotel Booking</h4>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="form-floating">
+                            <input name="name" type="text" class="form-control" placeholder="name">
+                            <label>NAME</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="form-floating">
+                            <input name="address" type="text" class="form-control" placeholder="address">
+                            <label>ADDRESS</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="form-floating">
+                            <input name="aadhar" type="text" class="form-control" placeholder="Adhaar Number">
+                            <label>AADHAAR NUMBER</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="form-floating">
+                            <input name="number" type="text" class="form-control" placeholder="Contact Number">
+                            <label>CONTACT NUMBER</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="form-floating">
+                            <input name="rooms" type="text" class="form-control" placeholder="Number of members">
+                            <label>Number of rooms</label>
+                        </div>
+                    </div>
+                     <div class="col-lg-6 col-md-12">
+                        <div class="form-floating">
+                            <input name="days" type="text" class="form-control" placeholder="Number of members">
+                            <label>Number of days</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="form-floating">
+                            <select name="beds" class="form-select">
+                                <option selected="" hidden="">select mode</option>
+                                <option value="one">One</option>
+                                <option value="two">Two</option>
+                                <option value="three">Three</option>
+                            </select>
+                            <label>PREFERRED NUMBER OF BEDS</label>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="col-12 mt-4">
+                            <button class="btn btn-secondary text-uppercase" type="button">Close</button>
+                            <button class="btn btn-primary text-uppercase" type="submit">CONFIRM TO PAYMENT<i
+                                    class="fa fa-plane ms-3"></i></button>
+                        </div>
+                    </div>
+                </div>
+        </form>
+    </div>
+</body>
+
+</html>
